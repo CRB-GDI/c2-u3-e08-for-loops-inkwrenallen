@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             //Prompting for and getting a maximum number from the user.
-            Console.WriteLine("please enter number maximum:");
+            Console.Write("please enter number maximum:");
             int maximum = int.Parse(Console.ReadLine());
 
             //Print all the even numbers from 0 up to the maximum number 
@@ -16,6 +16,15 @@
                 {
                     Console.WriteLine(i);
                 }
+            }
+            //Prompting for and getting a row width from the user.
+            Console.Write("please insert the width for each row:");
+            int numberAsterisks = int.Parse(Console.ReadLine());
+
+            //Printing a single row asterisks that the user-specified row width
+            for (int i = numberAsterisks; i > 0; i--)  
+            {
+                Console.Write("*"); 
             }
         }
     }
